@@ -1,13 +1,115 @@
-body {
+html, body {
     background-color: white;
     color: black;
     margin: 0;
-    padding: 5px;
+    padding: 0;
+}
+
+header {
+    margin: 0;
+    padding: 0;
+    background-color: palevioletred;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    width: 100%;
+    top: 0;
+}
+
+.header-img {
+    display: flex;
+    flex: 0 0 110px;
+    justify-content: center;
+    align-content: center;
+}
+
+#header-img {
+    width: 50px;
+    height: auto;
 }
 
 #nav-bar {
-    position: fixed;
+    flex: 1 1 0;
+}
+
+ul {
     display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+li {
+    list-style: none;
+    padding: 3px;
+    text-align: center;
+    flex: 0 1 100px;
+}
+
+main {
+    margin-top: 100px;
+}
+
+//* body {
+    background-color: white;
+    color: black;
+    margin: 0;
+    //padding: 5px;
+}
+
+header {
+    display: flex;
+    position: fixed;
+    max-height: 95px;
+    width: 100%;
+    //margin: -95px;
+}
+
+.header-img {
+    background-color: chartreuse;
+    justify-self: flex-start;
+    //padding: 5px;
+}
+
+#header-img {
+    width: 50px;
+    height: auto;
+    margin-top: auto;
+}
+
+#nav-bar {
+    background-color: blue;
+    width: 100%;
+    //justify-self: flex-end;
+}
+.nav-bar {
+    background-color: cadetblue;
+    display: flex;
+    justify-content: flex-end;
+    //margin: auto 5px;
+    //align-self: center;
+}
+
+li {
+    margin: 0 10px;
+    padding: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+footer {
+    display: flex;
+}
+
+#form {
+    width: 300px;
+}
+
+#submit {}
+
+address {
+    width: 300px;
 }
 
 @media (max-width: 500px) {
