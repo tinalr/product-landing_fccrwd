@@ -49,7 +49,16 @@ main {
     margin-top: 100px;
 }
 
-//* body {
+@media (max-width: 500px) {
+    body {
+        background-color: black;
+        color: white;
+        margin: 0;
+        padding: 5px;
+    }
+}
+
+/* body {
     background-color: white;
     color: black;
     margin: 0;
@@ -112,11 +121,4 @@ address {
     width: 300px;
 }
 
-@media (max-width: 500px) {
-    body {
-        background-color: black;
-        color: white;
-        margin: 0;
-        padding: 5px;
-    }
-} 
+ 
